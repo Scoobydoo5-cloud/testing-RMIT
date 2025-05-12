@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>Discover RMIT University</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d9230f, #000, #d9230f);
+      color: #fff;
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    header {
+      background: #000;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+    header .logo {
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: #d9230f;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      cursor: default;
+      user-select: none;
+    }
+    nav a {
+      color: #f5f5f5cc;
+      text-decoration: none;
+      margin-left: 14px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a:focus {
+      color: #ff6b3c;
+    }
+    main {
+      flex: 1 0 auto;
+      padding: 20px 16px 30px;
+      overflow-y: auto;
+      max-height: 600px;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/7b/RMIT_VCE_Cropped.jpg') center/cover no-repeat;
+      border-radius: 12px;
+      padding: 40px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+      box-shadow: inset 0 0 30px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+      text-shadow: 0 0 6px #d9230f;
+    }
+    .hero p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fbe1d0;
+      text-shadow: 0 0 3px #8a1407;
+    }
+    section {
+      margin-bottom: 24px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 12px;
+      padding: 14px 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    section h2 {
+      margin-bottom: 14px;
+      color: #ff6b3c;
+      font-size: 1.3rem;
+      border-bottom: 2px solid #ff6b3c;
+      padding-bottom: 6px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 10px 8px;
+      font-size: 0.8rem;
+      color: #d9230fcc;
+      user-select: none;
+      flex-shrink: 0;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.8);
+    }
+    .social-links a {
+      color: #d9230fcc;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover, .social-links a:focus {
+      color: #ff6b3c;
+    }
+
+    /* Scrollbar for main content */
+    main::-webkit-scrollbar {
+      width: 6px;
+    }
+    main::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    main::-webkit-scrollbar-thumb {
+      background-color: #d9230fcc;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" aria-label="RMIT University Logo">RMIT</div>
+    <nav aria-label="Primary navigation">
+      <a href="#about" tabindex="0">About</a>
+      <a href="#programs" tabindex="0">Programs</a>
+      <a href="#campus" tabindex="0">Campus Life</a>
+      <a href="#contact" tabindex="0">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" role="banner" aria-label="RMIT University overview">
+      <h1>Welcome to RMIT University</h1>
+      <p>Innovate. Create. Inspire.</p>
+    </section>
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Random Facts About RMIT</h2>
+      <ul>
+        <li>Founded in 1887 in Melbourne, Australia.</li>
+        <li>One of the world's leading global universities of technology, design, and enterprise.</li>
+        <li>Over 85,000 students enrolled worldwide.</li>
+        <li>Strong emphasis on creativity, innovation, and real-world experience.</li>
+        <li>Campus includes several modern and sustainable buildings.</li>
+      </ul>
+    </section>
+    <section id="programs" aria-labelledby="programs-heading">
+      <h2 id="programs-heading">Highlighted Academic Programs</h2>
+      <ul>
+        <li>Engineering and Technology – cutting-edge research and training.</li>
+        <li>Design – award-winning programs in fashion, graphic, and industrial design.</li>
+        <li>Business and Management – strong industry links and internships.</li>
+        <li>Health and Biomedical Sciences – modern labs and research facilities.</li>
+        <li>Media and Communication – hands-on learning with leading tools.</li>
+      </ul>
+    </section>
+    <section id="campus" aria-labelledby="campus-heading">
+      <h2 id="campus-heading">Campus Life at RMIT</h2>
+      <ul>
+        <li>Vibrant multicultural student community.</li>
+        <li>Wide range of clubs, sports, and cultural activities.</li>
+        <li>Access to top-notch libraries, cafes, and study spaces.</li>
+        <li>Strategically located campuses in Melbourne city center and beyond.</li>
+        <li>Dedicated support services for student success and wellbeing.</li>
+      </ul>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      <p>Email: <a href="mailto:info@rmit.edu.au" style="color:#ff6b3c;">info@rmit.edu.au</a></p>
+      <p>Phone: <a href="tel:+61399251344" style="color:#ff6b3c;">+61 3 9925 1344</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="social-links" aria-label="Social media links">
+      <a href="https://www.facebook.com/rmit" target="_blank" rel="noopener" aria-label="Facebook">Fb</a>
+      <a href="https://twitter.com/rmit" target="_blank" rel="noopener" aria-label="Twitter">Tw</a>
+      <a href="https://www.instagram.com/rmit/" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
+      <a href="https://www.linkedin.com/school/rmit-university/" target="_blank" rel="noopener" aria-label="LinkedIn">In</a>
+    </div>
+    <p>© 2024 RMIT University. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
